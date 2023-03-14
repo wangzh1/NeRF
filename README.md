@@ -53,12 +53,6 @@ As shown above, I got a great result from my toy optimizer ;)
 
 In previous volumetric rendering, I set the focal point as origin, however, it isn't actually the origin in world coordinates. So a transformation matrix is necessary to convert the camera coordinates to world coordinates.
 
-It looks like: $M=
-\begin{pmatrix}
-a_{11} & a_{12} & a_{13} & a_{14}\\
-a_{21} & a_{22} & a_{23} & a_{24}\\
-a_{31} & a_{32} & a_{33} & a_{34}\\
-0 & 0 & 0 & 1
-\end{pmatrix}$.
+It looks like: <img src="./images/transformation matrix.png" alt="截屏2023-03-14 20.15.03" style="zoom: 33%;" />
 
 The top-right 3*1 matrix is the real coordinate of focal point.
